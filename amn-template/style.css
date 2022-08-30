@@ -1,0 +1,581 @@
+/*
+Theme Name: amir
+Theme URI: http://fairanisite.site/themes/twentythirteen
+Author: the WordPress team
+Author URI: amir mohammad nasiri
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: amn
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+    font-family: "iranyekan";
+    src: url("../iranyekan.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  body,
+  span,
+  p {
+    font-family: "iranyekan";
+  }
+  
+  .header_desk {
+    min-width: 90% !important;
+  }
+  
+  .srch-div {
+    position: relative;
+  }
+  
+  .srch_inp {
+    margin-right: 20px;
+    font-size: 15px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-right: 40px;
+    margin-top: -20px;
+    background-color: rgb(238, 238, 238);
+    border-width: 0;
+    border: 5px;
+  }
+  
+  .srch-icn {
+    margin-right: 30px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+  }
+  
+  .carticn {
+    height: 35px;
+    padding: 6px;
+    transform: scaleX(-1);
+    border-left: 2px solid #ffffff;
+    margin-right: 10px;
+  }
+  
+  .btntxt {
+    padding: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    top: -40px;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .sidemenu {
+    width: 50%;
+    background: #ffffff;
+    height: 100vh;
+    padding: 30px;
+    margin-right: -50%;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .inpicn {
+    width: 20px;
+    transform: scaleX(-1);
+    padding-top: 40px;
+  }
+  
+  .lgn_btn {
+    height: 42px;
+    border-radius: 8px;
+    width: 130px !important;
+  }
+  
+  .header_mobile {
+    display: none;
+  }
+  #modal2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-delay: 0.3s;
+  }
+  @media only screen and (max-width: 1600px) {
+    .srch-icn {
+      margin-right: 50px;
+    }
+  
+    .srch_inp {
+      margin-right: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .srch_inp {
+      margin-right: 60px;
+    }
+    .inpicn {
+      width: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 1450px) {
+    .srch-icn {
+      right: 10px;
+      top: 15px;
+    }
+  
+    .srch-txt {
+      right: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 1318px) {
+    .srch-icn {
+      right: 10px;
+      top: 15px;
+    }
+  
+    .srch-txt {
+      right: 70px;
+    }
+  }
+  
+  @media only screen and (max-width: 1282px) {
+    .srch_inp {
+      margin-right: 40px;
+    }
+  
+    .srch-icn {
+      margin-right: 30px;
+      top: 15px;
+    }
+  
+    .srch-txt {
+      right: 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 1070px) {
+    .digikala {
+      margin-top: 7px;
+      margin-right: 83px;
+    }
+    .srch-icn {
+      margin-right: 10px;
+      top: -35px;
+    }
+  
+    .srch_inp {
+      margin-right: -1px;
+    }
+    .carticn {
+      margin-top: -50px;
+    }
+    .inpicn {
+      margin-top: -40px;
+    }
+    .btntxt {
+      margin-top: -65px;
+    }
+    .lgn_btn {
+      margin-top: -45px;
+    }
+    .header_desk {
+      display: none;
+    }
+  
+    .header_mobile {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .digikala {
+      margin-top: 7px;
+      margin-right: 73px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .digikala {
+      margin-top: 7px;
+      margin-right: 53px;
+    }
+  }
+  
+  /* head-mobile-3 */
+  #opennav {
+    margin-top: -20px;
+    font-size: 15px;
+    color: red;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border: 0px;
+    top: 25px;
+    margin-right: -10px;
+    border-radius: 0px;
+    border-bottom-right-radius: 5px 5px;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  
+  /****************************************************** nav-desk **********************************************************************/
+  .digi {
+    padding-bottom: 13px;
+  }
+  #modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: -30px;
+    right: -20px;
+    top: 150px;
+    width: 200%;
+    height: 100%;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-delay: 0.3s;
+  }
+  
+  #super:hover {
+    color: red;
+    border-bottom: 2px solid red;
+  }
+  #super {
+    height: 40px;
+    font-size: 14px;
+  }
+  #super1:hover {
+    color: red;
+    border-bottom: 2px solid red;
+  }
+  #super1 {
+    height: 40px;
+    margin-top: -7px;
+  }
+  
+  .itemnav:hover {
+    color: red;
+  }
+  #subb1 li a:hover {
+    color: red;
+    text-decoration: red;
+  }
+  #sub2 li a:hover {
+    color: red;
+  }
+  .dropdown-menu li {
+    position: relative;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: relative;
+    right: 97%;
+    border: 0px;
+    border-bottom-left-radius: 5px 5px;
+    padding-bottom: 35px;
+  }
+  
+  .dropdown-menu .dropdown-submenux {
+    display: inline-block;
+    position: fixed;
+    right: 97%;
+    z-index: -1;
+    border: 0px;
+    border-bottom-left-radius: 5px 5px;
+    top: -5px;
+    padding-bottom: 372px;
+  }
+  .dropdown-menu .dropdown-submenux-left {
+    right: auto;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenux {
+    display: flex;
+  }
+  .dropdown-item {
+    margin-bottom: 2px;
+  }
+  .dropdown-item:hover {
+    background-color: white;
+    color: red;
+  }
+  .dropdown-menu1 .dropdown-submenu1 {
+    display: none;
+    position: relative;
+    right: 100%;
+    top: 10px;
+  }
+  .dropdown-menu .dropdown-submenu-left {
+    right: auto;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: inline-flex;
+  }
+  .itemnav {
+    padding-bottom: 14.9px;
+    font-size: 14px;
+  }
+  
+  #sub2 {
+    width: 1450px;
+    height: 366px;
+  }
+  #subb5 {
+    width: 1450px;
+    height: 364px;
+  }
+  #subb6 {
+    width: 1450px;
+    height: 364px;
+  }
+  #subb1 {
+    width: 1450px;
+    height: 366px;
+  }
+  #myBtn {
+    margin-top: -40px;
+  }
+  
+  /* DESKTOP-LOCATE */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 100px auto;
+    border: 1px solid #888;
+    width: 20%;
+    height: 70%;
+    padding: 20px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* mobile-locate */
+  
+  #gil2 {
+    display: none;
+  }
+  #kerman2 {
+    display: none;
+  }
+  #fars2 {
+    display: none;
+  }
+  #yazd2 {
+    display: none;
+  }
+  
+  .ostan {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+  .ostandesk {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+  .ostanmob {
+    margin-bottom: 20px;
+  }
+  
+  #gil2desk {
+    display: none;
+    padding: 10px;
+  }
+  #hormoz2desk {
+    display: none;
+    padding: 10px;
+  }
+  #kerman2desk {
+    display: none;
+    padding: 10px;
+  }
+  #fars2desk {
+    display: none;
+    padding: 10px;
+  }
+  #yazd2desk {
+    display: none;
+    padding: 10px;
+  }
+  
+  /* SEARCH-MOBIEL */
+  
+  .openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .openBtn:hover {
+    background: #bbb;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 6%;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type="text"] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 100%;
+    background: white;
+  }
+  
+  .overlay input[type="text"]:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+  
+  .overlay1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay1-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay1 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay1 a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay1 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay1 a {
+      font-size: 20px;
+    }
+    .overlay1 .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
